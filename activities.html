@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Activities - Traditional Practices</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('homeo.jpg'); /* Replace with your chosen BG image */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #3e2723;
+    }
+    header {
+      background-color: rgba(255, 204, 128, 0.85);
+      padding: 30px 15px;
+      text-align: center;
+      color: #4e342e;
+      backdrop-filter: blur(5px);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      font-weight: bold;
+      font-family: 'Georgia', serif;
+    }
+    nav {
+      background-color: rgba(255, 183, 77, 0.9);
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 0 0 10px 10px;
+      backdrop-filter: blur(5px);
+    }
+    nav a {
+      text-decoration: none;
+    }
+    nav button {
+      margin: 5px 8px;
+      padding: 10px 16px;
+      font-size: 14px;
+      background-color: #ffb74d;
+      color: #4e342e;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    nav button:hover {
+      background-color: #ff9800;
+    }
+    main {
+      background-color: rgba(255,255,255,0.95);
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #4e342e;
+      margin-bottom: 25px;
+    }
+    .accordion {
+      background-color: #ffe0b2;
+      color: #3e2723;
+      cursor: pointer;
+      padding: 15px 20px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+    .accordion:hover {
+      background-color: #ffcc80;
+    }
+    .active, .accordion:focus {
+      background-color: #ffb74d;
+    }
+    .panel {
+      padding: 10px 20px 20px;
+      background-color: #fff3e0;
+      display: none;
+      overflow: hidden;
+      border-radius: 0 0 5px 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      background-color: rgba(255, 204, 128, 0.85);
+      color: #4e342e;
+      border-radius: 10px 10px 0 0;
+      backdrop-filter: blur(5px);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Activities Performed - Traditional Practices</h1>
+  </header>
+
+  <nav>
+  <a href="index.html"><button>HOME</button></a>
+  <a href="benefits.html"><button>BENEFITS</button></a>
+  <a href="activities.html"><button>ACTIVITIES</button></a>
+  <a href="homeopathy.html"><button>HOMEOPATHY</button></a>
+  <a href="ayurveda.html"><button>AYURVEDA</button></a>
+  <a href="yoga.html"><button>YOGA</button></a>
+  <a href="manual-therapy.html"><button>MANUAL THERAPY</button></a>
+  <a href="gallery.html"><button>GALLERY</button></a>
+  <a href="contact.html"><button>CONTACT</button></a>
+</nav>
+
+  <main>
+    <h2>Our Weekly Activities</h2>
+
+    <button class="accordion">Week 1: Community Introduction</button>
+    <div class="panel"><p>Introduced traditional health practices to the local community through basic awareness sessions.</p></div>
+
+    <button class="accordion">Week 2: Identifying Local Healers</button>
+    <div class="panel"><p>Engaged with experienced practitioners of Ayurveda, Yoga, and Manual Therapy in the region.</p></div>
+
+    <button class="accordion">Week 3: Homeopathy Demonstration</button>
+    <div class="panel"><p>Arranged a live session demonstrating basic homeopathy remedies and techniques.</p></div>
+
+    <button class="accordion">Week 4: Yoga Workshop</button>
+    <div class="panel"><p>Organized a morning yoga session focusing on breathing and body postures for well-being.</p></div>
+
+    <button class="accordion">Week 5: Manual Therapy Sessions</button>
+    <div class="panel"><p>Offered manual therapy demonstrations to address joint stiffness and mobility issues.</p></div>
+
+    <button class="accordion">Week 6: Educational Materials Distribution</button>
+    <div class="panel"><p>Distributed flyers and leaflets describing the benefits and precautions of traditional healing methods.</p></div>
+
+    <button class="accordion">Week 7: Feedback and Analysis</button>
+    <div class="panel"><p>Collected feedback from participants and evaluated the adoption of practices.</p></div>
+
+    <button class="accordion">Week 8: Final Community Interaction</button>
+    <div class="panel"><p>Concluded with a group session summarizing the knowledge gained and encouraging regular practice.</p></div>
+  </main>
+
+  <footer>
+    &copy; 2025 Traditional Practices Initiative. All rights reserved.
+  </footer>
+
+  <script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
